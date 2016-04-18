@@ -1,0 +1,8 @@
+use_frameworks!
+
+
+target 'RMHoldButton_Tests', :exclusive => true do
+  pod 'RMHoldButton', :path => '../'
+
+  
+end
