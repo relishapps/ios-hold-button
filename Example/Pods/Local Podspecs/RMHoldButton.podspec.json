@@ -1,0 +1,24 @@
+{
+  "name": "RMHoldButton",
+  "version": "0.1.0",
+  "summary": "A short description of RMHoldButton.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/RMHoldButton",
+  "license": "MIT",
+  "authors": {
+    "Dan Sinclair": "dansinclair@me.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/RMHoldButton.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RMHoldButton/Classes/**/*",
+  "resource_bundles": {
+    "RMHoldButton": [
+      "RMHoldButton/Assets/*.png"
+    ]
+  }
+}

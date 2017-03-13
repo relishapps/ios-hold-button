@@ -1,0 +1,14 @@
+PODS:
+  - RMHoldButton (0.1.0)
+
+DEPENDENCIES:
+  - RMHoldButton (from `../`)
+
+EXTERNAL SOURCES:
+  RMHoldButton:
+    :path: ../
+
+SPEC CHECKSUMS:
+  RMHoldButton: da5dbf3ed821039d1a30d43c52ef6011064b3010
+
+COCOAPODS: 0.39.0

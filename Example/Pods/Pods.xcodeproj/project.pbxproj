@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10E92484AFA0CD982B628AC512CFB248 /* Pods-RMHoldButton_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F82241453DB504F281536E44EA04540 /* Pods-RMHoldButton_Tests-dummy.m */; };
+		31551CEAEE8E61F994A4887D42154D62 /* RMHoldButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F4BE9C690A9467A50A9D7B60B42E57 /* RMHoldButton-dummy.m */; };
+		39D2BABE1CC5484C00136C00 /* NSTimer+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2BABC1CC5484C00136C00 /* NSTimer+Closure.swift */; };
+		39D2BABF1CC5484C00136C00 /* RMHoldButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2BABD1CC5484C00136C00 /* RMHoldButton.swift */; };
+		ACC03A66C4A331ACCA6C9E50B4915776 /* Pods-RMHoldButton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E0E2035D35E6E840DA77B405DD20431 /* Pods-RMHoldButton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADB2AD9A66960FE2EE0553AA42F51917 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		E24B910466018E733FF0B556AF65FB7D /* RMHoldButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FBD4183099E71EBDEA18BFD735889FF /* RMHoldButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECC5139B8B8CED62EC28BB9AA1EFE241 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		F0D95E511780F8A6F11ECA9BA5545D10 /* RMHoldButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5E82F4575C25FC1D400C8E5C6C5D6538 /* RMHoldButton.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1789F8DD95D7C5456A5AC77632DBB1E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 138A2538F835B149BC66F0A9591D637C;
+			remoteInfo = RMHoldButton;
+		};
+		94FE44C7E22B3EFFDE83A938CECC2FC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 417277CB74D7E0C69FFC8C2E3DA3CEE0;
+			remoteInfo = "RMHoldButton-RMHoldButton";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B7A821DDF4E30544A38092F932632E4 /* Pods-RMHoldButton_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RMHoldButton_Tests-resources.sh"; sourceTree = "<group>"; };
+		103DEC017DC44D6D95549B8A72D088F5 /* Pods-RMHoldButton_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RMHoldButton_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		1E0E2035D35E6E840DA77B405DD20431 /* Pods-RMHoldButton_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RMHoldButton_Tests-umbrella.h"; sourceTree = "<group>"; };
+		39D2BABC1CC5484C00136C00 /* NSTimer+Closure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimer+Closure.swift"; sourceTree = "<group>"; };
+		39D2BABD1CC5484C00136C00 /* RMHoldButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMHoldButton.swift; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3E796A293E67C0E464149D964C41180E /* Pods-RMHoldButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RMHoldButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		411535A8A3A1ED8287B4DD9AF51B00DF /* Pods-RMHoldButton_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RMHoldButton_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		511C9C4DBD6C9C577F13A232309F1D45 /* Pods-RMHoldButton_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RMHoldButton_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		589BA2DFBA04AB89812D41AC8905FB04 /* RMHoldButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RMHoldButton.xcconfig; sourceTree = "<group>"; };
+		5E82F4575C25FC1D400C8E5C6C5D6538 /* RMHoldButton.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RMHoldButton.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F92C929F8CCF0DBFB523F19E33CBEF8 /* Pods-RMHoldButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RMHoldButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6FBD4183099E71EBDEA18BFD735889FF /* RMHoldButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RMHoldButton-umbrella.h"; sourceTree = "<group>"; };
+		741F75D1889732CE5D27E888DFE4EEE0 /* RMHoldButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RMHoldButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F82241453DB504F281536E44EA04540 /* Pods-RMHoldButton_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RMHoldButton_Tests-dummy.m"; sourceTree = "<group>"; };
+		92D0E66AE560F5742E8D71F6A9AE8CF1 /* Pods-RMHoldButton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RMHoldButton_Tests.modulemap"; sourceTree = "<group>"; };
+		99CBD0F55DF0518566542FDEE49FF11D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B00CB567594EA4E92C0B7181431D5CEB /* Pods_RMHoldButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RMHoldButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A2FC3BD5304993B7E0459039305700 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CF685D94A474E36FC4198F106EA4348C /* RMHoldButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RMHoldButton.modulemap; sourceTree = "<group>"; };
+		E0CD8B5F38994029D69D14CF5B047009 /* RMHoldButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RMHoldButton-prefix.pch"; sourceTree = "<group>"; };
+		E8F4BE9C690A9467A50A9D7B60B42E57 /* RMHoldButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RMHoldButton-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35A5DAB6DB39BA951E00E91611C962DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADB2AD9A66960FE2EE0553AA42F51917 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68540BC03B2822E86F8C02E529637C99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC5139B8B8CED62EC28BB9AA1EFE241 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814012BEFFFBD1C374F349BEA328C3B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		147532DBDB8C331C2C57CD972F01357F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF0B28616F7C84D26A8241723202F325 /* Pods-RMHoldButton_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		53DB22ED65030EB7A413456C134995CE /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF6BA21BDFA83C1F304A6B51CF274976 /* RMHoldButton */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		58C8B246DBC72F969F90E22EE71610DF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5A2FC3BD5304993B7E0459039305700 /* Info.plist */,
+				CF685D94A474E36FC4198F106EA4348C /* RMHoldButton.modulemap */,
+				589BA2DFBA04AB89812D41AC8905FB04 /* RMHoldButton.xcconfig */,
+				E8F4BE9C690A9467A50A9D7B60B42E57 /* RMHoldButton-dummy.m */,
+				E0CD8B5F38994029D69D14CF5B047009 /* RMHoldButton-prefix.pch */,
+				6FBD4183099E71EBDEA18BFD735889FF /* RMHoldButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RMHoldButton";
+			sourceTree = "<group>";
+		};
+		634A4A346A3E83884218BA64FF433BA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B00CB567594EA4E92C0B7181431D5CEB /* Pods_RMHoldButton_Tests.framework */,
+				5E82F4575C25FC1D400C8E5C6C5D6538 /* RMHoldButton.bundle */,
+				741F75D1889732CE5D27E888DFE4EEE0 /* RMHoldButton.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				53DB22ED65030EB7A413456C134995CE /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				634A4A346A3E83884218BA64FF433BA9 /* Products */,
+				147532DBDB8C331C2C57CD972F01357F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AF6BA21BDFA83C1F304A6B51CF274976 /* RMHoldButton */ = {
+			isa = PBXGroup;
+			children = (
+				CFD7D2FE48BCCB16D5B97DBCDAB029F8 /* RMHoldButton */,
+				58C8B246DBC72F969F90E22EE71610DF /* Support Files */,
+			);
+			name = RMHoldButton;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF0B28616F7C84D26A8241723202F325 /* Pods-RMHoldButton_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				99CBD0F55DF0518566542FDEE49FF11D /* Info.plist */,
+				92D0E66AE560F5742E8D71F6A9AE8CF1 /* Pods-RMHoldButton_Tests.modulemap */,
+				511C9C4DBD6C9C577F13A232309F1D45 /* Pods-RMHoldButton_Tests-acknowledgements.markdown */,
+				411535A8A3A1ED8287B4DD9AF51B00DF /* Pods-RMHoldButton_Tests-acknowledgements.plist */,
+				7F82241453DB504F281536E44EA04540 /* Pods-RMHoldButton_Tests-dummy.m */,
+				103DEC017DC44D6D95549B8A72D088F5 /* Pods-RMHoldButton_Tests-frameworks.sh */,
+				0B7A821DDF4E30544A38092F932632E4 /* Pods-RMHoldButton_Tests-resources.sh */,
+				1E0E2035D35E6E840DA77B405DD20431 /* Pods-RMHoldButton_Tests-umbrella.h */,
+				6F92C929F8CCF0DBFB523F19E33CBEF8 /* Pods-RMHoldButton_Tests.debug.xcconfig */,
+				3E796A293E67C0E464149D964C41180E /* Pods-RMHoldButton_Tests.release.xcconfig */,
+			);
+			name = "Pods-RMHoldButton_Tests";
+			path = "Target Support Files/Pods-RMHoldButton_Tests";
+			sourceTree = "<group>";
+		};
+		CFD7D2FE48BCCB16D5B97DBCDAB029F8 /* RMHoldButton */ = {
+			isa = PBXGroup;
+			children = (
+				FBD51E149DAB1666F31A3ACCF0543398 /* Classes */,
+			);
+			path = RMHoldButton;
+			sourceTree = "<group>";
+		};
+		FBD51E149DAB1666F31A3ACCF0543398 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				39D2BABC1CC5484C00136C00 /* NSTimer+Closure.swift */,
+				39D2BABD1CC5484C00136C00 /* RMHoldButton.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7DA085D1A4A6E8370F13E8DE07BA3867 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E24B910466018E733FF0B556AF65FB7D /* RMHoldButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96C5E155C434B86F08BDC12700A30CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC03A66C4A331ACCA6C9E50B4915776 /* Pods-RMHoldButton_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		138A2538F835B149BC66F0A9591D637C /* RMHoldButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2E8BC4EBDC03AAA551F6901B5C5F659 /* Build configuration list for PBXNativeTarget "RMHoldButton" */;
+			buildPhases = (
+				CA7E419908F8CFFEA071C8ED9756EDAB /* Sources */,
+				35A5DAB6DB39BA951E00E91611C962DA /* Frameworks */,
+				981A3512EA372DD3352838301A48F6EA /* Resources */,
+				7DA085D1A4A6E8370F13E8DE07BA3867 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D1191D17C97E171B2015453B855420F /* PBXTargetDependency */,
+			);
+			name = RMHoldButton;
+			productName = RMHoldButton;
+			productReference = 741F75D1889732CE5D27E888DFE4EEE0 /* RMHoldButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		417277CB74D7E0C69FFC8C2E3DA3CEE0 /* RMHoldButton-RMHoldButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 132EB15E5ACECFBC03B1C5C4DC03D0E6 /* Build configuration list for PBXNativeTarget "RMHoldButton-RMHoldButton" */;
+			buildPhases = (
+				834982EB0DF26EC1526B3BD378E7B03D /* Sources */,
+				814012BEFFFBD1C374F349BEA328C3B8 /* Frameworks */,
+				D9C47AC7873DAE7BC758A197A0FF85CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RMHoldButton-RMHoldButton";
+			productName = "RMHoldButton-RMHoldButton";
+			productReference = 5E82F4575C25FC1D400C8E5C6C5D6538 /* RMHoldButton.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		FC722546B023A9AA962A5B595E81804F /* Pods-RMHoldButton_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61F3CF47FE5C82755F3AF15DC395817B /* Build configuration list for PBXNativeTarget "Pods-RMHoldButton_Tests" */;
+			buildPhases = (
+				73F14BC1AC55041971B5194C642C1BDF /* Sources */,
+				68540BC03B2822E86F8C02E529637C99 /* Frameworks */,
+				A96C5E155C434B86F08BDC12700A30CA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C611AAC6EC2A69046CA8031BB13A01C4 /* PBXTargetDependency */,
+			);
+			name = "Pods-RMHoldButton_Tests";
+			productName = "Pods-RMHoldButton_Tests";
+			productReference = B00CB567594EA4E92C0B7181431D5CEB /* Pods_RMHoldButton_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0730;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 634A4A346A3E83884218BA64FF433BA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC722546B023A9AA962A5B595E81804F /* Pods-RMHoldButton_Tests */,
+				138A2538F835B149BC66F0A9591D637C /* RMHoldButton */,
+				417277CB74D7E0C69FFC8C2E3DA3CEE0 /* RMHoldButton-RMHoldButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		981A3512EA372DD3352838301A48F6EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D95E511780F8A6F11ECA9BA5545D10 /* RMHoldButton.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9C47AC7873DAE7BC758A197A0FF85CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73F14BC1AC55041971B5194C642C1BDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10E92484AFA0CD982B628AC512CFB248 /* Pods-RMHoldButton_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834982EB0DF26EC1526B3BD378E7B03D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA7E419908F8CFFEA071C8ED9756EDAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D2BABE1CC5484C00136C00 /* NSTimer+Closure.swift in Sources */,
+				31551CEAEE8E61F994A4887D42154D62 /* RMHoldButton-dummy.m in Sources */,
+				39D2BABF1CC5484C00136C00 /* RMHoldButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D1191D17C97E171B2015453B855420F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RMHoldButton-RMHoldButton";
+			target = 417277CB74D7E0C69FFC8C2E3DA3CEE0 /* RMHoldButton-RMHoldButton */;
+			targetProxy = 94FE44C7E22B3EFFDE83A938CECC2FC0 /* PBXContainerItemProxy */;
+		};
+		C611AAC6EC2A69046CA8031BB13A01C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RMHoldButton;
+			target = 138A2538F835B149BC66F0A9591D637C /* RMHoldButton */;
+			targetProxy = 1789F8DD95D7C5456A5AC77632DBB1E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5A3437C803CC7DAA2E573DDF9C786EC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F92C929F8CCF0DBFB523F19E33CBEF8 /* Pods-RMHoldButton_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RMHoldButton_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RMHoldButton_Tests/Pods-RMHoldButton_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RMHoldButton_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		62504FB92921074C54DBC37049A34EA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 589BA2DFBA04AB89812D41AC8905FB04 /* RMHoldButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RMHoldButton/RMHoldButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RMHoldButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RMHoldButton/RMHoldButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = RMHoldButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A7F2DD2F14BFC15688B4D9F70C16398E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 589BA2DFBA04AB89812D41AC8905FB04 /* RMHoldButton.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RMHoldButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A93B7E24422792CACCEEEA1AF2B917E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E796A293E67C0E464149D964C41180E /* Pods-RMHoldButton_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RMHoldButton_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RMHoldButton_Tests/Pods-RMHoldButton_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RMHoldButton_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ABB25ED9F60A98BFC79402AAFED72C9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 589BA2DFBA04AB89812D41AC8905FB04 /* RMHoldButton.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RMHoldButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		E56A684A41CF02B63BA226DF6BC90255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 589BA2DFBA04AB89812D41AC8905FB04 /* RMHoldButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RMHoldButton/RMHoldButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RMHoldButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RMHoldButton/RMHoldButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = RMHoldButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		132EB15E5ACECFBC03B1C5C4DC03D0E6 /* Build configuration list for PBXNativeTarget "RMHoldButton-RMHoldButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7F2DD2F14BFC15688B4D9F70C16398E /* Debug */,
+				ABB25ED9F60A98BFC79402AAFED72C9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61F3CF47FE5C82755F3AF15DC395817B /* Build configuration list for PBXNativeTarget "Pods-RMHoldButton_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3437C803CC7DAA2E573DDF9C786EC0 /* Debug */,
+				A93B7E24422792CACCEEEA1AF2B917E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2E8BC4EBDC03AAA551F6901B5C5F659 /* Build configuration list for PBXNativeTarget "RMHoldButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E56A684A41CF02B63BA226DF6BC90255 /* Debug */,
+				62504FB92921074C54DBC37049A34EA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

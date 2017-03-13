@@ -1,0 +1,6 @@
+framework module Pods_RMHoldButton_Tests {
+  umbrella header "Pods-RMHoldButton_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
