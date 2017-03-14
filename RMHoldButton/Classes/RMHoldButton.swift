@@ -7,27 +7,51 @@
 //
 
 import UIKit
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l > r
+  default:
+    return rhs < lhs
+  }
+}
+
 
 @IBDesignable
-public class RMHoldButton: UIButton {
+open class RMHoldButton: UIButton {
     
-    @IBInspectable public var textColor: UIColor = UIColor.blackColor()
-    @IBInspectable public var slideColor: UIColor = UIColor.redColor()
-    @IBInspectable public var slideTextColor: UIColor = UIColor.whiteColor()
-    @IBInspectable public var borderColor: UIColor = UIColor.redColor()
-    @IBInspectable public var borderWidth: CGFloat = 0
-    @IBInspectable public var cornerRadius: CGFloat = 0
-    @IBInspectable public var slideDuration: NSTimeInterval = 2
-    @IBInspectable public var resetDuration: NSTimeInterval = 0.5
+    @IBInspectable open var textColor: UIColor = UIColor.black
+    @IBInspectable open var slideColor: UIColor = UIColor.red
+    @IBInspectable open var slideTextColor: UIColor = UIColor.white
+    @IBInspectable open var borderColor: UIColor = UIColor.red
+    @IBInspectable open var borderWidth: CGFloat = 0
+    @IBInspectable open var cornerRadius: CGFloat = 0
+    @IBInspectable open var slideDuration: TimeInterval = 2
+    @IBInspectable open var resetDuration: TimeInterval = 0.5
     
-    public var holdButtonCompletion: (() -> Void) = { () -> Void in }
+    open var holdButtonCompletion: (() -> Void) = { () -> Void in }
     
-    private var slideLayer: CALayer?
-    private var slideLabel: UILabel!
+    fileprivate var slideLayer: CALayer?
+    fileprivate var slideLabel: UILabel!
     
-    private var isAnimating: Bool = false
+    fileprivate var isAnimating: Bool = false
     
-    var timePeriodTimer: NSTimer?
+    var timePeriodTimer: Timer?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -37,7 +61,7 @@ public class RMHoldButton: UIButton {
         super.init(coder: aDecoder)
     }
     
-    public init(frame: CGRect, slideColor: UIColor, slideTextColor: UIColor, slideDuration: NSTimeInterval) {
+    public init(frame: CGRect, slideColor: UIColor, slideTextColor: UIColor, slideDuration: TimeInterval) {
         super.init(frame: frame)
         
         self.slideColor = slideColor
@@ -48,18 +72,18 @@ public class RMHoldButton: UIButton {
     }
     
         
-    public override func prepareForInterfaceBuilder()
+    open override func prepareForInterfaceBuilder()
     {
         if let context = UIGraphicsGetCurrentContext() {
             drawBackground(context, frame: self.bounds)
-            self.layer.borderColor = self.borderColor.CGColor
+            self.layer.borderColor = self.borderColor.cgColor
             self.layer.borderWidth = self.borderWidth
             self.layer.cornerRadius = self.cornerRadius
             self.clipsToBounds = true
         }
     }
     
-    public override func awakeFromNib()
+    open override func awakeFromNib()
     {
         super.awakeFromNib()
         
@@ -67,37 +91,37 @@ public class RMHoldButton: UIButton {
         
     }
     
-    private func addTargets() {
-        addTarget(self, action: #selector(RMHoldButton.start(_:forEvent:)), forControlEvents: .TouchDown)
-        addTarget(self, action: #selector(RMHoldButton.cancel(_:forEvent:)), forControlEvents: .TouchUpInside)
-        addTarget(self, action: #selector(RMHoldButton.cancel(_:forEvent:)), forControlEvents: .TouchCancel)
-        addTarget(self, action: #selector(RMHoldButton.cancel(_:forEvent:)), forControlEvents: .TouchDragExit)
-        addTarget(self, action: #selector(RMHoldButton.cancel(_:forEvent:)), forControlEvents: .TouchDragOutside)
+    fileprivate func addTargets() {
+        addTarget(self, action: #selector(RMHoldButton.start(_:forEvent:)), for: .touchDown)
+        addTarget(self, action: #selector(RMHoldButton.cancel(_:forEvent:)), for: .touchUpInside)
+        addTarget(self, action: #selector(RMHoldButton.cancel(_:forEvent:)), for: .touchCancel)
+        addTarget(self, action: #selector(RMHoldButton.cancel(_:forEvent:)), for: .touchDragExit)
+        addTarget(self, action: #selector(RMHoldButton.cancel(_:forEvent:)), for: .touchDragOutside)
     }
     
-    public override func drawRect(rect: CGRect)
+    open override func draw(_ rect: CGRect)
     {
-        super.drawRect(rect)
+        super.draw(rect)
         
         if let context = UIGraphicsGetCurrentContext() {
-            CGContextClearRect(context, rect)
+            context.clear(rect)
             drawBackground(context, frame: self.bounds)
-            self.layer.borderColor = self.borderColor.CGColor
+            self.layer.borderColor = self.borderColor.cgColor
             self.layer.borderWidth = self.borderWidth
             self.layer.cornerRadius = self.cornerRadius
             self.clipsToBounds = true
             
-            self.setTitleColor(self.textColor, forState: .Normal)
+            self.setTitleColor(self.textColor, for: UIControlState())
             
         }
         
     }
     
     
-    func start(sender: AnyObject, forEvent event: UIEvent)
+    func start(_ sender: AnyObject, forEvent event: UIEvent)
     {
         
-        timePeriodTimer = NSTimer.schedule(delay: slideDuration, handler: { (timer) in
+        timePeriodTimer = Timer.schedule(delay: slideDuration, handler: { (timer) in
             self.timePeriodTimer?.invalidate()
             self.timePeriodTimer = nil
 
@@ -113,39 +137,39 @@ public class RMHoldButton: UIButton {
             
             self.slideLayer = CALayer()
             self.slideLayer?.masksToBounds = true
-            self.slideLayer!.anchorPoint = CGPointMake(0, 0)
-            self.slideLayer!.bounds = CGRectMake(0, 0, 0, self.bounds.height)
-            self.slideLayer!.backgroundColor = self.slideColor.CGColor
+            self.slideLayer!.anchorPoint = CGPoint(x: 0, y: 0)
+            self.slideLayer!.bounds = CGRect(x: 0, y: 0, width: 0, height: self.bounds.height)
+            self.slideLayer!.backgroundColor = self.slideColor.cgColor
             self.layer.insertSublayer(self.slideLayer!, above: self.layer)
             
             let textLayer = CATextLayer()
-            textLayer.anchorPoint = CGPointMake(0, 0)
+            textLayer.anchorPoint = CGPoint(x: 0, y: 0)
             textLayer.frame = (self.titleLabel?.frame)!
             textLayer.font = self.titleLabel?.font
             textLayer.fontSize = (self.titleLabel?.font.pointSize)!
-            textLayer.foregroundColor = self.slideTextColor.CGColor
+            textLayer.foregroundColor = self.slideTextColor.cgColor
             textLayer.string = self.titleLabel?.text
             textLayer.alignmentMode = kCAAlignmentCenter
-            textLayer.contentsScale = UIScreen.mainScreen().scale
+            textLayer.contentsScale = UIScreen.main.scale
             self.slideLayer!.addSublayer(textLayer)
             
             let animation = CABasicAnimation(keyPath: "bounds.size.width")
             animation.duration = slideDuration
             animation.fillMode = kCAFillModeForwards
-            animation.removedOnCompletion = false
+            animation.isRemovedOnCompletion = false
             if self.slideLayer!.animationKeys()?.count > 0 {
-                if let temp = self.slideLayer!.presentationLayer() as? CALayer {
+                if let temp = self.slideLayer!.presentation() {
                     animation.fromValue = temp.bounds.width
                 }
             }
             animation.toValue = self.bounds.width
             animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
-            self.slideLayer!.addAnimation(animation, forKey: "drawSlideAnimation")
+            self.slideLayer!.add(animation, forKey: "drawSlideAnimation")
             self.layer.addSublayer(self.slideLayer!)
         }
     }
     
-    func cancel(sender: AnyObject, forEvent event: UIEvent)
+    func cancel(_ sender: AnyObject, forEvent event: UIEvent)
     {
         reset()
     }
@@ -156,7 +180,7 @@ public class RMHoldButton: UIButton {
         self.timePeriodTimer?.invalidate()
         self.timePeriodTimer = nil
         
-        timePeriodTimer = NSTimer.schedule(delay: resetDuration, handler: { (timer) in
+        timePeriodTimer = Timer.schedule(delay: resetDuration, handler: { (timer) in
             self.timePeriodTimer?.invalidate()
             self.timePeriodTimer = nil
             
@@ -169,32 +193,32 @@ public class RMHoldButton: UIButton {
         
         let animation = CABasicAnimation(keyPath: "bounds.size.width")
         animation.duration = resetDuration
-        animation.removedOnCompletion = true
+        animation.isRemovedOnCompletion = true
         if self.slideLayer?.animationKeys()?.count > 0 {
-            if let temp = self.slideLayer?.presentationLayer() as? CALayer {
+            if let temp = self.slideLayer?.presentation() {
                 animation.fromValue = temp.bounds.width
             }
         }
         animation.toValue = 0
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
-        self.slideLayer?.addAnimation(animation, forKey: "drawSlideAnimation")
+        self.slideLayer?.add(animation, forKey: "drawSlideAnimation")
         
     }
     
     
-    func drawBackground(context: CGContextRef, frame: CGRect)
+    func drawBackground(_ context: CGContext, frame: CGRect)
     {
         if let backgroundColor = self.backgroundColor {
-            CGContextSetFillColorWithColor(context, backgroundColor.CGColor);
-            CGContextFillRect(context, bounds)
+            context.setFillColor(backgroundColor.cgColor);
+            context.fill(bounds)
         }
     }
 
-    public func setText(text: String) {
-        self.setTitle(text, forState: .Normal)
+    open func setText(_ text: String) {
+        self.setTitle(text, for: UIControlState())
     }
     
-    public func setTextFont(font: UIFont) {
+    open func setTextFont(_ font: UIFont) {
         self.titleLabel!.font = font
     }
 

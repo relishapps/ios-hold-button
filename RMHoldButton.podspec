@@ -28,12 +28,12 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/relishmedia/ios-hold-button.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'RMHoldButton/Classes/**/*'
-  s.resource_bundles = {
-    'RMHoldButton' => ['RMHoldButton/Assets/*.png']
-  }
+  # s.resource_bundles = {
+  #   'RMHoldButton' => ['RMHoldButton/Assets/*.png']
+  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

@@ -1,14 +1,16 @@
 PODS:
-  - RMHoldButton (0.1.0)
+  - RMHoldButton (1.0.0)
 
 DEPENDENCIES:
   - RMHoldButton (from `../`)
 
 EXTERNAL SOURCES:
   RMHoldButton:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  RMHoldButton: da5dbf3ed821039d1a30d43c52ef6011064b3010
+  RMHoldButton: ef4b1f194b09225c6316af447ccf0407386c560a
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 7f75b6ab1d4a01728c6631383b239c4b33cdf828
+
+COCOAPODS: 1.1.1

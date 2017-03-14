@@ -1,16 +1,16 @@
 {
   "name": "RMHoldButton",
-  "version": "0.1.0",
-  "summary": "A short description of RMHoldButton.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/RMHoldButton",
+  "version": "1.0.0",
+  "summary": "A must have UIButton subclass for desctructive actions.",
+  "description": "A Swift subclass of UIButton that has to be held for a configurable amount of time before it performs an action",
+  "homepage": "https://github.com/relishmedia/ios-hold-button",
   "license": "MIT",
   "authors": {
     "Dan Sinclair": "dansinclair@me.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/RMHoldButton.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/relishmedia/ios-hold-button.git",
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "8.0"
