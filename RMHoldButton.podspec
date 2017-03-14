@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/relishmedia/ios-hold-button"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Dan Sinclair" => "dansinclair@me.com" }
+  s.author           = { "Dan Sinclair" => "dan@relish.io" }
   s.source           = { :git => "https://github.com/relishmedia/ios-hold-button.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
