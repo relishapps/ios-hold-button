@@ -1,6 +1,6 @@
 # RMHoldButton
 
-[![CI Status](http://img.shields.io/travis/Dan Sinclair/RMHoldButton.svg?style=flat)](https://travis-ci.org/Dan Sinclair/RMHoldButton)
+<!--[![CI Status](http://img.shields.io/travis/Dan Sinclair/RMHoldButton.svg?style=flat)](https://travis-ci.org/Dan Sinclair/RMHoldButton)-->
 [![Version](https://img.shields.io/cocoapods/v/RMHoldButton.svg?style=flat)](http://cocoapods.org/pods/RMHoldButton)
 [![License](https://img.shields.io/cocoapods/l/RMHoldButton.svg?style=flat)](http://cocoapods.org/pods/RMHoldButton)
 [![Platform](https://img.shields.io/cocoapods/p/RMHoldButton.svg?style=flat)](http://cocoapods.org/pods/RMHoldButton)
