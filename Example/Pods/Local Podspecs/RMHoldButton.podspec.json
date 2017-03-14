@@ -13,12 +13,7 @@
     "tag": "1.0.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "RMHoldButton/Classes/**/*",
-  "resource_bundles": {
-    "RMHoldButton": [
-      "RMHoldButton/Assets/*.png"
-    ]
-  }
+  "source_files": "RMHoldButton/Classes/**/*"
 }
